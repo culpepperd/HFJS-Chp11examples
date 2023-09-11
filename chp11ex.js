@@ -3,11 +3,34 @@
 */
 
 
+
+// Chp. 11 - pg. 482 Exercise
+
+// Convert the code below from one that uses a variable as 
+// an argument to one that uses an anonymous function expression.
 /*
+function vaccine(dosage) {
+    if (dosage > 0) {
+        inject(dosage);
+    }
+}
+
+administer(patient, vaccine, time); */
+/*
+// Solution:
+administer(patient, function(dosage) {
+    if (dosage > 0) {
+        inject(dosage);
+    }
+}, time); */
+
+
+
 // Chp. 11 - pg. 478
 // Below is an example of an anonymous function.
 // Instead of setting window.onload = init(); we define the function
 // immediately after the assignment operator
+/*
 window.onload = function() { console.log("The page has loaded.") };
 
 var cookies = {
